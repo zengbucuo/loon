@@ -1,23 +1,19 @@
 #!name = Wifi万能钥匙专业版去广告
 #!desc =拦截弹窗，首页列表广告，资讯列表广告
-#!openUrl = https://apps.apple.com/app/id6443916065
 #!tag = 去广告
+#!openUrl = https://apps.apple.com/app/id6443916065
 #!icon = https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/78/8e/80/788e8059-fe48-cf49-331a-be16010d044b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png
 
 [Rule]
-
 #屏蔽弹窗
 DOMAIN-SUFFIX, api-access.pangolin-sdk-toutiao-b.com , REJECT
 
 [Rewrite]
-
 #资讯列表广告
 ^https?:\/\/mp-api\.lsttnews\.com\/topicnews\/topicdata\.do url reject-200
 
 #首页列表广告
 ^https?:\/\/ia1\.wifi188\.com\/feeds\.sec url reject-200
-
-
 
 [MitM]
 hostname = mp-api.lsttnews.com , ia1.wifi188.com
