@@ -1,5 +1,5 @@
 #!name = JavDB
-#!desc = 屏蔽开屏广告，弹窗提示
+#!desc = 拦截开屏广告，弹窗提示
 #!tag = 去广告
 #!icon = https://raw.githubusercontent.com/zengbucuo/loon/refs/heads/main/Icons/app/javdb.png
 
