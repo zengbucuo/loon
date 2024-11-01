@@ -2,9 +2,12 @@
 
 #!desc = 解锁SVIP
 
+#!tag = 功能增强
+
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeiTu.png
 
-#!tag = 功能增强
+#!openUrl = https://apps.apple.com/app/id416048305
+
 
 [Script]
 
