@@ -1,7 +1,7 @@
 #!name = BiliBili_CC
 #!desc = 哔哩哔哩繁体CC字幕转中文简体
 #!tag = 功能增强
-#!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.pngDoraemon-1030.png
+#!icon= https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.pngDoraemon-1030.png
 
 [Script]
 # > 哔哩哔哩繁体CC字幕转中文简体
