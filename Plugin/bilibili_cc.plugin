@@ -1,0 +1,14 @@
+#!name = Bilibili_CC
+
+#!desc = 哔哩哔哩繁体CC字幕转中文简体
+
+#!tag = 功能增强
+
+#!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.pngDoraemon-1030.png
+
+[Script]
+# > 哔哩哔哩繁体CC字幕转中文简体
+http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, timeout=60, tag=bilibili_cc
+
+[MITM]
+hostname = aisubtitle.hdslb.com, i0.hdslb.com
