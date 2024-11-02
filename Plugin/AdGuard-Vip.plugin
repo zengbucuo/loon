@@ -12,7 +12,7 @@
 
 # 解锁永久高级版
 
-http-response ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuardProCrack
+http-response ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuard解锁高级版
 
 [MITM]
 
