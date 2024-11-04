@@ -1,11 +1,8 @@
 #!name = Wifi万能钥匙专业版去广告
-
 #!desc =拦截弹窗，首页列表广告，资讯列表广告
-
+#!author = 自用
 #!tag = 去广告
-
 #!openUrl = https://apps.apple.com/app/id6443916065
-
 #!icon = https://raw.githubusercontent.com/zengbucuo/loon/refs/heads/main/Icons/app/wifiwnys.png
 
 [Rule]
