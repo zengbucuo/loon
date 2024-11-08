@@ -1,0 +1,13 @@
+#!name = 安心记加班解锁会员
+#!desc = 解锁Vip会员
+#!author = 彭于晏[https://github.com/89996462]
+#!tag = 解锁
+#!openUrl = https://apps.apple.com/app/id1148517227
+#!icon=https://raw.githubusercontent.com/zengbucuo/loon/refs/heads/main/Icons/app/axjjb.png
+
+[Script]
+# 解锁Vip会员
+http-response ^http[s]?:\/\/market-gateway.julanling.com/member/api2/vip/getFunctionVipStatus script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/julanling.js, requires-body=true, timeout=60, tag=解锁会员
+
+[MITM]
+hostname = market-gateway.julanling.com
