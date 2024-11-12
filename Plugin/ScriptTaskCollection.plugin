@@ -25,10 +25,6 @@ arg13 = input, "04 00 * * *" , tag=酷狗概念版任务定时参数
 arg14 = switch , flag , tag= 酷狗概念版任务开关
 arg15 = switch , flag , tag= 酷狗概念版获取Cookie
 
-arg16 = input, "05 00 * * *" , tag=吾爱破解定时参数
-arg17 = switch , flag , tag=吾爱破解任务开关
-arg18 = switch , flag , tag=吾爱破解获取Cookie
-
 arg66 = input, "00 7 * * *" , tag=每天60秒读懂世界任务定时参数
 arg67 = switch , flag , tag= 每天60秒读懂世界任务开关
 
@@ -48,8 +44,7 @@ http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token scri
 cron {arg13} script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js, timeout=120, enable= {arg14}, tag=酷狗概念版任务
 http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js, requires-body=true, timeout=60,enable = {arg15}, tag= 酷狗概念版获取Cookie
 
-cron {arg16} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, timeout=120,enable= {arg17},  tag=吾爱破解任务
-http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, requires-body=true, timeout=60,enable = {arg18}, tag=吾爱破解获取Cookie
+
 
 cron {arg66} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=120, enable= {arg67}, tag=每天60秒读懂世界
 
