@@ -27,20 +27,17 @@ URL-REGEX, ^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$, REJECT
 
 [Rewrite]
 
-# WiFi万能钥匙去广告
-mp-api.lsttnews.com , ia1.wifi188.com
+# WiFi万能钥匙去广告 mp-api.lsttnews.com , ia1.wifi188.com
 # 资讯列表广告
 ^https?:\/\/mp-api\.lsttnews\.com\/topicnews\/topicdata\.do url reject-200
 # 首页列表广告
 ^https?:\/\/ia1\.wifi188\.com\/feeds\.sec url reject-200
 
-# U净APP去广告
-adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn,ads.zhinengxiyifang.cn
+# U净APP去广告 adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn,ads.zhinengxiyifang.cn
 ^https:\/\/adsoss\.zhinengxiyifang\.cn\/ads url reject 
 ^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/* url reject-200
 
-# 大师兄影视去广告
- sdk.alibaba.com.ailbaba.me, adservice.sigmob.cn
+# 大师兄影视去广告 sdk.alibaba.com.ailbaba.me, adservice.sigmob.cn
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version reject-200
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ reject-200
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? reject-200
