@@ -26,7 +26,7 @@ arg14 = switch , flag , tag= 酷狗概念版任务开关
 arg15 = switch , flag , tag= 酷狗概念版获取Cookie
 
 arg66 = input, "00 7 * * *" , tag=每天60秒读懂世界任务定时参数
-arg67 = switch , flag , tag= 每天60秒读懂世界任务开关
+
 
 [Script]
 cron {arg1} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/task.js, timeout=120 , enable= {arg2}, tag=网易云音乐人任务
@@ -46,7 +46,7 @@ http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharg
 
 
 
-cron {arg66} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=120, enable= {arg67}, tag=每天60秒读懂世界
+
 
 [MITM]
 hostname = music.163.com , user-api.smzdm.com , app.bilibili.com , m.bilibili.com , auth.alipan.com , auth.aliyundrive.com , *.kugou.com , www.52pojie.cn
