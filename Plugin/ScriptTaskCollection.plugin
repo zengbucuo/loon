@@ -25,7 +25,7 @@ arg13 = input, "04 00 * * *" , tag=酷狗概念版任务定时参数
 arg14 = switch , flag , tag= 酷狗概念版任务开关
 arg15 = switch , flag , tag= 酷狗概念版获取Cookie
 
-arg66 = input, "00 7 * * *" , tag=每天60秒读懂世界任务定时参数
+
 
 
 [Script]
