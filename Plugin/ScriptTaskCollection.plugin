@@ -9,22 +9,9 @@ arg1 = input, "01 00,18 * * *" , tag=网易云音乐定时参数
 arg2 = switch , flag , tag=网易云任务开关
 arg3 = switch , flag , tag=网易云音乐获取Cookie
 
-arg4 = input, "01 00 * * *" , tag=什么值得买定时参数
-arg5 = switch , flag , tag=什么值得买任务开关
-arg6 = switch , flag , tag=什么值得买获取Cookie
-
-arg7 = input, "02 00 * * *" , tag=BiliBili定时参数
-arg8 = switch , flag , tag= BiliBili任务开关
-arg9 = switch , flag , tag= BiliBili获取Cookie
-
-arg10 = input, "03 00 * * *" , tag=阿里云盘定时参数
-arg11 = switch , flag , tag= 阿里云盘任务开关
-arg12 = switch , flag , tag= 阿里云盘获取Cookie
-
-arg13 = input, "04 00 * * *" , tag=酷狗概念版任务定时参数
-arg14 = switch , flag , tag= 酷狗概念版任务开关
-arg15 = switch , flag , tag= 酷狗概念版获取Cookie
-
+arg4 = input, "02 00 * * *" , tag=BiliBili定时参数
+arg5 = switch , flag , tag= BiliBili任务开关
+arg6 = switch , flag , tag= BiliBili获取Cookie
 
 
 
@@ -32,21 +19,14 @@ arg15 = switch , flag , tag= 酷狗概念版获取Cookie
 cron {arg1} script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/task.js, timeout=120 , enable= {arg2}, tag=网易云音乐人任务
 http-request ^https?:\/\/music\.163\.com\/weapi\/cloudbean\/records\/incomes script-path = https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/cookie.js,  requires-body=true, timeout=60,enable = {arg3}, tag=网易云音乐获取Cookie
 
-cron {arg4} script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, timeout=120, enable= {arg5}, tag=什么值得买任务
-http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, requires-body=true, timeout=60,enable = {arg6}, tag=什么值得买获取Cookie
+cron {arg4} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=120, enable= {arg5}, tag= BiliBili任务
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=60,enable = {arg6}, tag= BiliBili获取Cookie
 
-cron {arg7} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=120, enable= {arg8}, tag= BiliBili任务
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, requires-body=true, timeout=60,enable = {arg9}, tag= BiliBili获取Cookie
 
-cron {arg10} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=120, enable= {arg11}, tag=阿里云盘任务
-http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60,enable = {arg12}, tag= 阿里云盘获取Cookie
-
-cron {arg13} script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js, timeout=120, enable= {arg14}, tag=酷狗概念版任务
-http-request https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).* script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js, requires-body=true, timeout=60,enable = {arg15}, tag= 酷狗概念版获取Cookie
 
 
 
 
 
 [MITM]
-hostname = music.163.com , user-api.smzdm.com , app.bilibili.com , m.bilibili.com , auth.alipan.com , auth.aliyundrive.com , *.kugou.com , www.52pojie.cn
+hostname = music.163.com , app.bilibili.com , m.bilibili.com , 
