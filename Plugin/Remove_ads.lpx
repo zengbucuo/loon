@@ -5,12 +5,10 @@
 #!icon = https://raw.githubusercontent.com/zengbucuo/loon/refs/heads/main/Icons/app/WifiWNYS.PNG
 
 [Rule]
-
 # WiFi万能钥匙屏蔽弹窗
 DOMAIN-SUFFIX, api-access.pangolin-sdk-toutiao-b.com , REJECT
 
 [Rewrite]
-
 # WiFi万能钥匙去广告 mp-api.lsttnews.com , ia1.wifi188.com
 # 资讯列表广告
 ^https?:\/\/mp-api\.lsttnews\.com\/topicnews\/topicdata\.do url reject-200
